@@ -4,14 +4,14 @@ class CalculadoraPython:
         self.a = a
         self.b = b
 
-    def somar(self):
+    def somar(self,a,b):
         return self.a + self.b
     
-    def diminuir(self):
+    def diminuir(self,a,b):
         return self.a - self.b
     
-    def multiplicar(self):
+    def multiplicar(self,a,b):
         return self.a * self.b
     
-    def dividir(self):
+    def dividir(self,a,b):
         return self.a / self.b
