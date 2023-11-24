@@ -4,7 +4,9 @@
 name: Python application
 
 on:
-  commit_comment:
+  push:
+    branches: [ "main" ]
+  pull_request:
     branches: [ "main" ]
 
 permissions:
