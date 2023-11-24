@@ -2,13 +2,17 @@ import pytest
 from CalculadoraPython import CalculadoraPython
 
 def test_somar():
-    assert CalculadoraPython.somar(3,3) == 6
+    calculadorapython = CalculadoraPython(3,3)
+    assert CalculadoraPython.somar() == 6
 
 def test_diminuir():
-    assert CalculadoraPython.diminuir(2,1) == 1
+    calculadorapython = CalculadoraPython(2,1)
+    assert CalculadoraPython.diminuir() == 1
 
 def test_multiplicar():
-    assert CalculadoraPython.multiplicar(2,4) == 8
+    calculadorapython = CalculadoraPython(2,4)
+    assert CalculadoraPython.multiplicar() == 8
 
 def test_dividir():
-    assert CalculadoraPython.dividir(15, 5) == 3
+    calculadorapython = CalculadoraPython(15,5)
+    assert CalculadoraPython.dividir() == 3
